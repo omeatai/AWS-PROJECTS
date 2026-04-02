@@ -1,4 +1,4 @@
-# AWS-LABS-IFEANYI by Ifeanyi Omeata
+# AWS-PROJECTS by Ifeanyi Omeata
 
 ## #AWS PROJECTS & LABS
 
@@ -8,7 +8,7 @@
 
 <details>
   <summary>EXAM TOPICS</summary>
-  
+
 - [ ] [EXAM TOPICS](https://www.examtopics.com/exams/amazon/)
 - [ ] [AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C01](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner/)
 - [ ] [AMAZON AWS CERTIFIED CLOUD PRACTITIONER EXAM CLF-C02](https://www.examtopics.com/exams/amazon/aws-certified-cloud-practitioner-clf-c02/)
