@@ -1,0 +1,59 @@
+---
+description: Apply when building the next AWS lab from aws_rough.txt → labs/N.md and README (student-friendly, current AWS docs).
+globs: "**/aws_rough.txt"
+alwaysApply: false
+---
+
+# AWS lab from rough transcript (`aws_rough.txt`)
+
+When the user applies this rule (or `@` mentions it) and wants the **next** lab generated:
+
+## 1. Inputs and numbering
+
+- Read **`aws_rough.txt`** at the **AWS-PROJECTS repo root** (same level as `README.md`). If the workspace root is a parent folder (e.g. monorepo), use **`AWS-PROJECTS/aws_rough.txt`**.
+- If the file is empty or only whitespace, stop and ask the user to paste the rough notes or transcript first.
+- Determine **`N`**: the next integer such that **`labs/N.md` does not exist**. Scan `labs/` for files named **`{number}.md`** (digits only, e.g. `1.md` … `25.md`); set **`N = max + 1`**. Ignore `all-projects.md`, `generate_labs.py`, and other non-numbered names.
+
+## 2. Title and extraction
+
+- Derive a clear, descriptive **Title Case** title from the rough content (e.g. “Create an S3 Static Website with CloudFront”).
+- Extract all concrete steps, regions, resource names, CLI commands, console paths, and diagrams/links mentioned in the rough file. Organize into a **single coherent lab**; fill small gaps logically as an experienced AWS engineer would, without inventing major requirements the user did not imply.
+
+## 3. Output file `labs/N.md`
+
+Create **`labs/N.md`** with this structure (match tone and depth of existing labs like `labs/1.md`):
+
+1. **`# Project N: {title}`**
+2. Optional playlist line (keep consistent with other labs if this repo uses it):
+   `> **Playlist:** [AWS Cloud LABS](https://www.youtube.com/playlist?list=PL6rbQ5F5xbtUDapCqcNV0srF8Uu-8RtSt)`
+3. **`## Introduction`** — What the project is, why it matters, plain language (high-school readable).
+4. **`## Technologies and tools used`** — Table: service/concept | short explanation (e.g. S3, VPC, IAM, Lambda, **Amazon Linux 2023** vs AL2, etc.).
+5. **`## Step-by-step lab walkthrough`** — Detailed checklist steps (`- [ ] **...**`), grouped with `###` subheadings. Include code/console blocks where useful. Preserve any URLs or image markdown from the rough file if present.
+6. **`## Conclusion`** — What was built, how to verify, security/cost/cleanup notes, and **one sentence** on when you’d use this in real life.
+
+**Do not** add a Q&A section unless the user explicitly asks later.
+
+## 4. Keep AWS guidance current
+
+While writing or expanding steps, **align with current AWS practice** (use official docs when unsure):
+
+- Prefer **Amazon Linux 2023** notes where relevant: package manager **`dnf`** (not `yum` for AL2023).
+- IAM: mention **least privilege**, **MFA** for privileged users; note **IAM Identity Center (SSO)** as the modern alternative to long-term access keys where appropriate.
+- S3: **Block Public Access**, **Object Ownership** (ACLs often disabled), encryption defaults.
+- Console names drift (e.g. **AWS WAF**); say “search in the console for …” when exact labels may vary.
+- Call out **sandbox-only** patterns (`0.0.0.0/0` SSH, wide admin policies) and suggest tighter production options.
+
+## 5. Update `README.md`
+
+Append one line **after the last `PROJECT …` link**, same format as existing entries:
+
+```markdown
+#### [PROJECT N - TITLE IN ALL CAPS](https://github.com/omeatai/AWS-PROJECTS/blob/main/labs/N.md)
+```
+
+Use the **same GitHub `blob/main` URL pattern** as the other projects. Title in the link text must be **ALL CAPS**.
+
+## 6. After delivery
+
+- Tell the user **`labs/N.md`** and **`README.md`** were updated.
+- Remind them they can **clear or replace `aws_rough.txt`** when starting the next project so the next run does not mix content.
