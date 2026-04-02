@@ -48,7 +48,7 @@ While writing or expanding steps, **align with current AWS practice** (use offic
 Append one line **after the last `PROJECT …` link**, same format as existing entries:
 
 ```markdown
-#### [PROJECT N - TITLE IN ALL CAPS](https://github.com/omeatai/AWS-PROJECTS/blob/main/labs/N.md)
+- [ ] [PROJECT N - TITLE IN ALL CAPS](https://github.com/omeatai/AWS-PROJECTS/blob/main/labs/N.md)
 ```
 
 Use the **same GitHub `blob/main` URL pattern** as the other projects. Title in the link text must be **ALL CAPS**.
