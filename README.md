@@ -1,6 +1,6 @@
 # AWS-PROJECTS by Ifeanyi Omeata
 
-Hands-on AWS labs (playlist: [AWS Cloud LABS](https://www.youtube.com/playlist?list=PL6rbQ5F5xbtUDapCqcNV0srF8Uu-8RtSt)). Each project has its own file under [`labs/`](labs/) with an introduction, technologies used, step-by-step walkthrough, and conclusion.
+Hands-on AWS labs playlist: [AWS Cloud LABS](https://www.youtube.com/playlist?list=PL6rbQ5F5xbtUDapCqcNV0srF8Uu-8RtSt)
 
 #### [PROJECT 1 - CREATE AN IAM USER AND GROUP IN AWS](https://github.com/omeatai/AWS-PROJECTS/blob/main/labs/1.md)
 
