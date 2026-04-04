@@ -51,3 +51,7 @@ Hands-on AWS labs playlist: [AWS Cloud LABS](https://www.youtube.com/playlist?li
 - [ ] [PROJECT 24 - ENCRYPTING AND DECRYPTING DATA USING AWS KMS](https://github.com/omeatai/AWS-PROJECTS/blob/main/labs/24.md)
 
 - [ ] [PROJECT 25 - ENCRYPT S3 BUCKET, EBS VOLUME AND AMI USING AWS KMS, WITH CROSS-REGION REPLICATION](https://github.com/omeatai/AWS-PROJECTS/blob/main/labs/25.md)
+
+## Notes
+
+Study notes and reference write-ups (expanded from `aws_rough.txt` when the content is conceptual rather than a hands-on lab).

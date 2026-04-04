@@ -1,12 +1,73 @@
 ---
-description: Apply when building the next AWS lab from aws_rough.txt → labs/N.md and README (student-friendly, current AWS docs).
+description: Apply when building the next AWS lab or study note from aws_rough.txt → labs/N.md or notes/M.md and README (student-friendly, current AWS docs).
 globs: "**/aws_rough.txt"
 alwaysApply: false
 ---
 
-# AWS lab from rough transcript (`aws_rough.txt`)
+# AWS lab or study note from rough transcript (`aws_rough.txt`)
 
-When the user applies this rule (or `@` mentions it) and wants the **next** lab generated:
+When the user applies this rule (or `@` mentions it) and wants the **next** lab or note generated:
+
+## Lab vs study notes
+
+- **`aws_rough.txt`** may contain a **hands-on lab** (step-by-step build in AWS) **or** **study notes** (concepts, comparisons, exam prep, architecture explanations, summaries without a single build checklist).
+- If the user **says** it is notes / study material / not a lab, or the content is **clearly** conceptual reference (no concrete lab flow), treat it as **study notes** and follow **Study notes path** below. Otherwise follow **Lab path** (sections 1–6 under “Lab path”).
+
+---
+
+## Study notes path
+
+Use this when the rough content is **not** a single hands-on lab.
+
+### SN-1. Inputs and numbering
+
+- Read **`aws_rough.txt`** at the **AWS-PROJECTS repo root** (or **`AWS-PROJECTS/aws_rough.txt`** in a monorepo). If empty or only whitespace, stop and ask the user to paste content first.
+- Ensure the **`notes/`** directory exists under **AWS-PROJECTS** (create it if missing).
+- Determine **`M`**: the next integer such that **`notes/M.md` does not exist**. Scan **`notes/`** for files named **`{number}.md`** (digits only); set **`M = max + 1`**. Ignore non-numbered filenames in `notes/` if any.
+
+### SN-2. Title and extraction
+
+- Derive a clear **Title Case** title from the rough content (e.g. “IAM Identity Center vs IAM Users”).
+- Organize material into **coherent sections**: definitions, comparisons, when to use what, gotchas, and links or CLI/console references if present. Fill small gaps logically as an experienced AWS engineer would, without inventing major claims the user did not imply.
+
+### SN-3. Output file `notes/M.md`
+
+Create **`notes/M.md`** with depth and tone comparable to **`labs/1.md`**, but **adapted for learning/reference** (not a single build project):
+
+1. **`# Note M: {title}`** — use this heading pattern for every `notes/M.md`; if `notes/` already uses a different pattern from a prior note, match that folder’s existing style.
+2. Optional playlist line if it fits the repo style:
+   `> **Playlist:** [AWS Cloud LABS](https://www.youtube.com/playlist?list=PL6rbQ5F5xbtUDapCqcNV0srF8Uu-8RtSt)`
+3. **`## Introduction`** — What this note covers and why it matters (plain language).
+4. **`## Key concepts and services`** — Table: concept/service | short explanation (same spirit as “Technologies and tools used” in labs).
+5. **Body sections** — Use `###` headings for topics (e.g. comparisons, security, pricing awareness, diagrams). Use bullet lists, tables, and code/console blocks where useful. Preserve URLs or image markdown from the rough file.
+6. **`## Summary`** — Bullet recap and, if relevant, pointers to official docs or follow-on labs in this repo.
+
+**Do not** add a Q&A section unless the user explicitly asks later.
+
+### SN-4. Keep AWS guidance current
+
+Apply the same **current AWS practice** checklist as in **section 4** under Lab path (AL2023, IAM, S3, console naming, sandbox vs production).
+
+### SN-5. Update `README.md`
+
+Under **`## Notes`** in **`README.md`**, append one line **after the last note link** (same checklist + GitHub `blob/main` pattern as projects):
+
+```markdown
+- [ ] [NOTE M - TITLE IN ALL CAPS](https://github.com/omeatai/AWS-PROJECTS/blob/main/notes/M.md)
+```
+
+If the **Notes** section or intro paragraph is missing, add **`## Notes`** with a one-sentence intro, then the new link.
+
+### SN-6. After delivery
+
+- Tell the user **`notes/M.md`** and **`README.md`** were updated.
+- Remind them they can **clear or replace `aws_rough.txt`** before the next run.
+
+---
+
+# Lab path (hands-on labs)
+
+When the user wants the **next** **lab** generated:
 
 ## 1. Inputs and numbering
 
@@ -33,7 +94,7 @@ Create **`labs/N.md`** with this structure (match tone and depth of existing lab
 
 **Do not** add a Q&A section unless the user explicitly asks later.
 
-## 4. Keep AWS guidance current
+## 4. Keep AWS guidance current (labs and notes)
 
 While writing or expanding steps, **align with current AWS practice** (use official docs when unsure):
 

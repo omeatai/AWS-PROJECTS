@@ -1,0 +1,119 @@
+Hello and welcome to this course.
+
+The first thing I'd like to say is congratulations on being here and investing in yourself.
+
+Now this course and all of the associated resources we've put together are designed to ensure you have
+
+the best chance to pass your exam. No matter what your background.
+
+Everyone can pass this exam with the right resources and the right approach to study.
+
+So, how do you go about using all of these resources to your best advantage?
+
+Firstly, I'd like to point you towards the course download lesson, which is the last lesson in this
+
+section.
+
+In that lesson, you'll find a link to our website.
+
+From that page, you'll be able to download the code that you need for the hands-on lessons in this
+
+course.
+
+You'll also find a study guide, which can give you a very good idea of how to approach study.
+
+Now it is a guideline really.
+
+You can follow it to the latter if you like, or you might sort of tailor it to your own needs, depending
+
+on how much time you have each day to allocate to study.
+
+You'll also find the slides from the course, which you can download and peruse at your leisure offline.
+
+There are two types of lessons in this course.
+
+The first is the theory lessons.
+
+Now in those, I try to keep things as visual as possible with lots of animated diagrams to help you
+
+to understand the concepts.
+
+Then we go into hands-on lessons.
+
+You'll identify those because the name of the lesson has HOL at the beginning.
+
+Hands-on lessons are where you have an opportunity to go into the AWS console in your own free tier
+
+account and follow along with what I do so that you can learn some really valuable hands-on skills.
+
+At the end of each section, you'll find a couple of additional lessons.
+
+One is the Architecture Patterns.
+
+What I do in those lessons is I try to introduce you to a way of taking the knowledge you've just learned
+
+and putting it into the types of scenarios that you find in the workplace and also on the exam.
+
+So it's about understanding particular problems that companies are trying to solve with the technologies
+
+you've just learned about.
+
+I go through some example requirements and the best solutions for them.
+
+Then I have the exam crams.
+
+Exam crams are a really fast-paced way of going through essentially a list of bullet points, key facts
+
+that you just need to understand for the exam.
+
+Now, that's good for last minute revision
+
+after you've been through the section, you've understood the theory, you've practiced hands-on, and
+
+now you just want to go through very quickly and get to the core facts.
+
+At the end of each section, you'll also find a quiz.
+
+The quiz will test your understanding of the knowledge you've just learned.
+
+Quizzes are not meant to reflect the style of the exam questions. Those can be found in our practice
+
+tests.
+
+Now, I do highly recommend that you use our full practice test course to make sure that you've got
+
+a broad understanding of the types of questions that come up, and really hone your skills on problem
+
+solving and coming up with the best solutions.
+
+Quick tip. If at any point in the course you find that I'm going too fast or too slow for you, you can
+
+always change the playback speed.
+
+And there are also subtitles which you can enable or disable at any time
+
+if you want to read along as well. The last thing I want to mention is our cheat sheets.
+
+You'll find links at the end of each section.
+
+Now they are a list of the core knowledge that often comes up in the exams that are a good way of quickly
+
+getting to the knowledge you need without getting bogged down in all the hundreds of pages you'll find
+
+on AWS.
+
+So hopefully they're a really useful resource for you too.
+
+So those are all the resources available to you. Now,
+
+I do highly recommend that you follow through the course in order. I do build on concepts and we work
+
+through labs and use things that we've created in previous sections.
+
+So it's really much better if you follow through the course in order and don't skip any lessons.
+
+So that's it.
+
+As I mentioned, there's a lot of resources here and absolutely everything you need to pass the exam.
+
+So, I hope you enjoy the course and I'll see you in the next lesson.
