@@ -117,3 +117,413 @@ So that's it.
 As I mentioned, there's a lot of resources here and absolutely everything you need to pass the exam.
 
 So, I hope you enjoy the course and I'll see you in the next lesson.
+
+
+Hello everyone, and welcome to this video.
+
+In this video, I'm going to walk you through the details
+
+of the SAA-C03 exam,
+
+that's the code
+
+for the AWS Certified Solutions Architect Associate Exam.
+
+So, let's get into the details.
+
+This exam is an associate-level certification exam.
+
+That means it's between the foundational
+
+and then the professional level.
+
+So it does require that you have some experience
+
+and knowledge of AWS experience in the industry.
+
+Now, don't worry if you don't have that,
+
+because we will take you from the beginning,
+
+it just makes it a bit easier if you do have some background
+
+and understanding of things like compute, storage,
+
+networking, and databases.
+
+Now, the length of this exam is 130 minutes,
+
+and there are 65 questions.
+
+At the associate level, the questions are scenario-based,
+
+and some of those scenarios can be quite complex,
+
+and the answers themselves can be quite tricky.
+
+Often I'll find that there's maybe two answers
+
+which look very, very tempting to choose,
+
+and one of them is still clearly wrong,
+
+but you've gotta try and work that out.
+
+So, it can become a little bit tricky.
+
+Sometimes you might find
+
+that you're spending a few minutes on a question,
+
+but be careful of the timer,
+
+because the time is counting down,
+
+and you wanna make sure you have enough time.
+
+So, don't get stuck on a question for too long,
+
+mark it for review and come back to it,
+
+and you'll find that some of the other questions
+
+you'll be able to answer much more quickly.
+
+The cost is $150,
+
+if you've done another certification before,
+
+make sure you remember to get your voucher
+
+so you get a 50% discount,
+
+assuming you passed the previous exam.
+
+Delivery method is testing center or online,
+
+so you can go into a testing center,
+
+or, as long as you fulfill the basic requirements,
+
+then you can do it online.
+
+So you need a quiet space, a quiet room, no one else around,
+
+no noise, clutter-free desk,
+
+and once you sign up, they will email you
+
+and give you some details there.
+
+You can even do a technical check
+
+and make sure your networking is okay,
+
+your camera's working, and your microphone as well.
+
+Scoring is scaled scoring
+
+between a hundred and a thousand points.
+
+They don't tell us any more than that,
+
+so it's a little bit of a black box,
+
+but basically you need to get 720 points out of a thousand,
+
+so around 72% to get a pass mark.
+
+Question format is multiple-choice and multiple-response.
+
+So with multiple-choice,
+
+that means you're gonna have four answers,
+
+one of them is correct, three are not.
+
+With multiple-response,
+
+it varies from two or more correct responses
+
+from five or more options.
+
+There's no hands-on component or anything like that,
+
+it's purely just multi-choice
+
+and multiple-response questions.
+
+For the SAA-C03, it's broken into four domains,
+
+and these really sort of reflect
+
+the architectural considerations we have,
+
+which are security, resilience, performance, and cost.
+
+So, the first one is design secure architectures.
+
+The first task statement within this domain is,
+
+design secure access to AWS resources,
+
+so you need to know what security controls you can apply
+
+to make sure the resources are secured well.
+
+You also need to know how to design secure workloads
+
+and applications,
+
+and determine appropriate data security controls.
+
+That's the responsibility of you as a customer in AWS.
+
+Domain two is design resilient architectures.
+
+You need to know how to design scalable
+
+and loosely coupled architectures, and highly available
+
+and, or, fault-tolerant architectures as well.
+
+Domain three is design high-performing architectures,
+
+so you need to know how to ensure
+
+that storage solutions are scalable and performant.
+
+And the same for elastic compute solutions as well,
+
+so you need to understand the various different methods
+
+and controls that you have,
+
+and deployment options you have available to you
+
+for ensuring that performance meets specified requirements.
+
+Task statement 3.3 is,
+
+determine high performing database solutions.
+
+So, you might implement things like scalable storage,
+
+or perhaps caching for the database.
+
+3.4 is determine high performing,
+
+and, or, scalable network architectures.
+
+And 3.5 is determine high-performing data ingestion
+
+and transformation solutions.
+
+For domain four, now we get to cost-optimized architectures.
+
+You need to know
+
+how to design cost-optimized storage solutions,
+
+cost-optimized compute solutions,
+
+cost-optimized database solutions,
+
+and cost-optimized network architectures.
+
+That's it for this overview of the exam,
+
+and if you want some more details,
+
+including the ability to review the in-scope services,
+
+which AWS services are,
+
+or potentially might be included in your exam,
+
+you can go straight to the AWS exam guide,
+
+I'll add a link to this lesson.
+
+Of course, don't worry,
+
+we do cover all of those services in the course as well,
+
+we're constantly updating
+
+and making sure that we have everything covered
+
+that you need to know for your exam.
+
+In this quick video,
+
+I just want to discuss a couple of options
+
+for getting hands-on practice.
+
+Now whatever technology you are learning,
+
+there's no substitute
+
+for getting hands-on practice actually using the technology.
+
+It really is the best way to learn.
+
+Now in this course,
+
+I recommend you open your own AWS Free Tier account,
+
+but there's another additional tool
+
+that might be useful called a Sandbox.
+
+So let's start off with Free Tier.
+
+With the Free Tier,
+
+you are gonna create your very own AWS Free Tier account,
+
+and I'm gonna show you how to do that.
+
+Now you get full control over this account.
+
+It's your account,
+
+and that means you can do anything you want
+
+with the account.
+
+Now this does mean that you are responsible for any bills.
+
+You'll need to add a credit card when you sign up
+
+for your Free Tier account,
+
+and you'll have to pay any bills that you run up.
+
+Now we will operate in the Free Tier in this course,
+
+and if we ever go outside of the Free Tier,
+
+I'm gonna warn you,
+
+but you always have to follow my instructions
+
+and make sure you shut down resources to avoid bills.
+
+And we're gonna set a billing alarm
+
+so you get a notification if you reach a certain threshold.
+
+I highly recommend
+
+that you do open your own Free Tier account
+
+so you can follow along with my instructions
+
+as we go through the course in the hands-on lessons.
+
+An additional resource is known
+
+as a Sandbox or a Challenge Lab.
+
+Now in this model,
+
+the AWS account is actually hosted by a provider.
+
+It's not your account.
+
+Now that does mean that you will have limited control.
+
+For more advanced courses,
+
+it means you won't be able to do things
+
+like cross-account access
+
+because you'll only have one account
+
+and you'll have limited control over it.
+
+On the plus side, it means you get no cloud bills,
+
+you don't take any risk or responsibility.
+
+You pay for the service upfront,
+
+and there's no risk of running up any additional bills.
+
+With Challenge Labs, you get scenario-based challenges,
+
+so it's a great way to test your skills
+
+and learn new skills as well based on a scenario
+
+that's been pre-configured for you,
+
+it's been designed for you and the lab has been set up
+
+to accommodate that particular challenge.
+
+I recommend Challenge Labs as an additional training tool.
+
+If you do want to gain access to Challenge Labs,
+
+then we actually have some on our website.
+
+Now this is completely optional.
+
+It's not required for this course,
+
+but it's an extra learning tool.
+
+It does require registration
+
+and you have to pay an additional fee.
+
+There's a video on this page
+
+to show what they look like in action.
+
+And in this particular example,
+
+there are over 700 labs
+
+across many different cloud platforms and technologies.
+
+Alternatively, if you're just learning AWS,
+
+you can access the AWS Challenge Labs,
+
+and you can see an example here of the console.
+
+For those who are taking the SysOps exam,
+
+this is what you'll see in your AWS exam lab.
+
+This is the same provider that AWS use
+
+for their new exam labs.
+
+So you'll get the AWS Management Console on the left
+
+and some instructions on the right,
+
+or in the case of the exam or the more advanced labs,
+
+you just get a scenario and a few hints
+
+as to what you need to do,
+
+and it also verifies and validates the work
+
+that you've done.
+
+So these are completely optional,
+
+but they're definitely a very useful tool
+
+for getting extra practice and validating your own skills.
+
+
+
